@@ -39,6 +39,13 @@ conda init
 6. Init git
 
 ```sh
-git config --global user.email "ngoclma9415@gmail.com"
+git config --global user.email "ngoclam9415@gmail.com"
 git config --global user.name "Lam Nguyen"
+```
+
+7. Install unikey
+
+```sh
+sudo apt-get install ibus-unikey
+ibus restart
 ```
