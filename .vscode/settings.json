@@ -1,0 +1,8 @@
+{
+    // .. any other settings
+    // "terminal.integrated.env.linux": {
+    //     "PYTHONPATH": "${workspaceFolder}"
+    //   },
+    "python.envFile": "/home/lam/repos/AlphaSelector/.vscode/debug.env",
+    "python.pythonPath": "/home/lam/miniconda3/envs/dev/bin/python"
+}
