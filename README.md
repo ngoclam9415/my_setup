@@ -41,6 +41,7 @@ conda init
 ```sh
 git config --global user.email "ngoclam9415@gmail.com"
 git config --global user.name "Lam Nguyen"
+git config --global submodule.recurse true
 ```
 
 7. Install unikey
