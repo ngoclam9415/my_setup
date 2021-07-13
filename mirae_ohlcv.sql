@@ -27,3 +27,51 @@
 call resample_mirae()
 
 
+DROP FUNCTION f_get_ohlcv(text[],timestamp without time zone,timestamp without time zone,text,interval);
+
+CREATE OR REPLACE FUNCTION public.f_get_ohlcv(
+    _codes text[],
+    _from_date timestamp without time zone,
+    _to_date timestamp without time zone,
+    _source text default 'VND',
+    _bucket interval default '1 min'
+)
+RETURNS TABLE(
+    "Date" timestamp without time zone,
+	symbol character varying(11),
+    open numeric,
+    high numeric,
+    low numeric,
+    close numeric,
+    volume numeric
+)
+LANGUAGE 'plpgsql'
+COST 100
+VOLATILE PARALLEL UNSAFE
+ROWS 1000
+
+AS $BODY$
+begin 
+    return query
+	SELECT time_bucket(_bucket, ts - interval '7 Hours') as bucket,
+		   code as symbol,
+		   first(matchprice, ts) as open,
+		   max(matchprice) as high,
+		   min(matchprice) as low,
+		   last(matchprice, ts) as close,
+		   case
+		       when last(accumulatedvol, ts) is null then sum(matchqtty)
+			   else last(accumulatedvol, ts) - first(accumulatedvol, ts) + first(matchqtty, ts)
+			END as volume
+	FROM all_sources_order_matching
+	WHERE (
+		ts >= _from_date + interval '7 Hours'
+		and ts < _to_date + interval '7 Hours'
+		and source = _source
+		and code = any(_codes)
+	)
+	group by bucket, code
+	order by bucket;
+END;
+$BODY$;
+	
