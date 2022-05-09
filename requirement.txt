@@ -1,0 +1,36 @@
+asgiref==3.2.10
+brotlipy==0.7.0
+certifi==2021.5.30
+#cffi @ file:///tmp/build/80754af9/cffi_1625814692085/work
+chardet==3.0.4
+conda==4.10.3
+#conda-package-handling @ file:///tmp/build/80754af9/conda-package-handling_1618262147379/work
+cryptography==35.0.0
+#datacollector @ file:///home/production/repos/data_collector/dist/datacollector-0.0.1-py3-none-any.whl
+dateparser==0.7.6
+Django==3.1
+#hft-backtest @ file:///home/production/repos/alphav2/vq_e4hft/package/dist/hft_backtest-0.0.3-py2.py3-none-any.whl
+idna==2.8
+kafka-python==2.0.2
+numpy==1.19.5
+pandas==1.2.2
+psycopg2-binary==2.9.1
+pycosat==0.6.3
+#pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+#pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
+#PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+python-dateutil==2.8.2
+python-dotenv==0.15.0
+pytz==2021.3
+pytz-deprecation-shim==0.1.0.post0
+regex==2021.10.8
+requests==2.22.0
+#rework-backtrader @ file:///home/production/repos/wraper_backtrader/package/dist/rework_backtrader-0.0.1-py3-none-any.whl
+#ruamel-yaml-conda @ file:///tmp/build/80754af9/ruamel_yaml_1616016711199/work
+#six @ file:///tmp/build/80754af9/six_1623709665295/work
+sqlparse==0.4.2
+tabulate==0.8.9
+#tqdm @ file:///tmp/build/80754af9/tqdm_1625563689033/work
+tzdata==2021.4
+tzlocal==4.0.1
+urllib3==1.25.11
