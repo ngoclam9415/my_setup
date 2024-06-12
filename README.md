@@ -6,9 +6,9 @@ sudo apt-get install -y zsh
 sudo apt-get install -y curl
 sudo apt-get install -y git
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 sudo apt-get install gcc gcc+
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 2. Close terminal and install this package
