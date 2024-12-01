@@ -24,7 +24,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 4. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc) and add miniconda path:
 ```sh
 export PATH=$HOME/miniconda3/bin:$PATH
-
+ZSH_THEME="gnzh"
 ...
 
 plugins=(zsh-autosuggestions)
