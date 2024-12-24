@@ -4,5 +4,23 @@
     //     "PYTHONPATH": "${workspaceFolder}"
     //   },
     "python.envFile": "/home/lam/repos/AlphaSelector/.vscode/debug.env",
-    "python.pythonPath": "/home/lam/miniconda3/envs/dev/bin/python"
+    "python.pythonPath": "/home/lam/miniconda3/envs/dev/bin/python",
+    {
+    "python.analysis.extraPaths": [
+        "./apps"
+    ],
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/apps"
+    },
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+            }
+    },
+    
+}
 }
