@@ -1,16 +1,9 @@
 {
-    // .. any other settings
-    // "terminal.integrated.env.linux": {
-    //     "PYTHONPATH": "${workspaceFolder}"
-    //   },
-    "python.envFile": "/home/lam/repos/AlphaSelector/.vscode/debug.env",
-    "python.pythonPath": "/home/lam/miniconda3/envs/dev/bin/python",
-    {
     "python.analysis.extraPaths": [
-        "./apps"
+        "./src"
     ],
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder}/apps"
+        "PYTHONPATH": "${workspaceFolder}/src"
     },
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "[python]": {
@@ -21,6 +14,16 @@
             "source.organizeImports": "explicit"
             }
     },
+    "python.analysis.typeCheckingMode": "standard",
+    "pylint.interpreter": [
+        "${workspaceFolder}/.venv/bin/python"
+    ],
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 2,
     
-}
 }
