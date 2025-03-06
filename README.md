@@ -18,8 +18,21 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 
-3. Download and install miniconda from [this link](https://docs.conda.io/en/latest/miniconda.html)
-
+3. Installing Rye as python package manager
+Download Rye
+```sh
+curl -fsSL https://rye-up.com/get | bash
+```
+Add Shims to Path
+```sh
+echo 'source "$HOME/.rye/env"' >> ~/.zshrc
+```
+Shell completion
+```sh
+source ~/.zshrc
+mkdir $ZSH_CUSTOM/plugins/rye
+rye self completion -s zsh > $ZSH_CUSTOM/plugins/rye/_rye
+```
 
 4. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc) and add miniconda path:
 ```sh
@@ -27,7 +40,7 @@ export PATH=$HOME/miniconda3/bin:$PATH
 ZSH_THEME="gnzh"
 ...
 
-plugins=(zsh-autosuggestions)
+plugins=(git zsh-autosuggestions rye)
 ```
 
 5. Create **dev** env and run
