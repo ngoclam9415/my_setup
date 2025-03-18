@@ -25,5 +25,6 @@
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 2,
-    
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000    
 }
