@@ -64,15 +64,22 @@ sudo apt-get install ibus-unikey
 ibus restart
 ```
 
+8. Set default web browser
+
+```sh
+xdg-settings get default-web-browser
+xdg-settings set default-web-browser microsoft-edge.desktop
+```
+
 ### Optional for Trading
 
-8. Install talib
+9. Install talib
 ```sh
 sudo apt-get install clang
 wget https://github.com/ta-lib/ta-lib/releases/download/v0.6.4/ta-lib_0.6.4_amd64.deb && sudo dpkg -i ta-lib_0.6.4_amd64.deb && rm ta-lib_0.6.4_amd64.deb
 ```
 
-9. Create /data folder
+10. Create /data folder
 ```sh
 sudo mkdir /data
 sudo chmod -R 777 /data
