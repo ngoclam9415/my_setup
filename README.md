@@ -63,3 +63,17 @@ git config --global submodule.recurse true
 sudo apt-get install ibus-unikey
 ibus restart
 ```
+
+### Optional for Trading
+
+8. Install talib
+```sh
+sudo apt-get install clang
+wget https://github.com/ta-lib/ta-lib/releases/download/v0.6.4/ta-lib_0.6.4_amd64.deb && sudo dpkg -i ta-lib_0.6.4_amd64.deb && rm ta-lib_0.6.4_amd64.deb
+```
+
+9. Create /data folder
+```sh
+sudo mkdir /data
+sudo chmod -R 777 /data
+```
