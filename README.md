@@ -84,3 +84,6 @@ wget https://github.com/ta-lib/ta-lib/releases/download/v0.6.4/ta-lib_0.6.4_amd6
 sudo mkdir /data
 sudo chmod -R 777 /data
 ```
+
+### Anydesk
+After installing anydesk, if you have **display server not supported**, follow this [link](https://askubuntu.com/questions/1131921/anydesk-remote-server-display-not-supported-e-g-wayland)
