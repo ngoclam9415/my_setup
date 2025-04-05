@@ -29,6 +29,11 @@
     "files.autoSaveDelay": 1000,
     "workbench.colorCustomizations": {
         "tab.activeBorder": "#34a547",
-        "tab.unfocusedActiveBorder": "#000000"
-    }
+        "tab.unfocusedActiveBorder": "#000000",
+        "tab.activeBackground": "#34a547",
+        "tab.inactiveBackground": "#000000",
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564"
+    },
+    "workbench.tree.indent": 20
 }
