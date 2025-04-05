@@ -3,9 +3,9 @@
         "./src"
     ],
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder}/src"
+        "PYTHONPATH": "/Users/lam/Desktop/repos/mvp/aiKO/api"
     },
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.notebookFileRoot": "/Users/lam/Desktop/repos/mvp/aiKO/api",
     "[python]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff",
@@ -16,7 +16,7 @@
     },
     "python.analysis.typeCheckingMode": "standard",
     "pylint.interpreter": [
-        "${workspaceFolder}/.venv/bin/python"
+        "/Users/lam/Desktop/repos/mvp/aiKO/api/.venv/bin/python"
     ],
     "azureFunctions.deploySubpath": ".",
     "azureFunctions.scmDoBuildDuringDeployment": true,
@@ -26,5 +26,9 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 2,
     "files.autoSave": "onFocusChange",
-    "files.autoSaveDelay": 1000    
+    "files.autoSaveDelay": 1000,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#34a547",
+        "tab.unfocusedActiveBorder": "#000000"
+    }
 }
